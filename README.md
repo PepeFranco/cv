@@ -1,2 +1,2 @@
 # CV
-Personal DV
+Personal CV
