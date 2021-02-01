@@ -8,9 +8,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-print-color-adjust: exact;
   font-size: 12px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 
 code {

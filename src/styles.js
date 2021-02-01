@@ -2,14 +2,15 @@ const styles = {
   root: {
     display: "flex",
     flexDirection: "column",
-    alignItems: "center"
+    alignItems: "center",
   },
   flag: {
     display: "flex",
     justifyContent: "flex-end",
-    width: "100%",
-    position: "absolute",
-    top: "10vh"
+    padding: "0px",
+    "@media print": {
+      display: "none",
+    },
   },
   content: {
     marginLeft: "10vw",
@@ -17,23 +18,16 @@ const styles = {
     marginBottom: "5vw",
     maxWidth: "210mm",
     flexDirection: "column",
-    "@media (min-width: 600px)": {
-      display: "flex",
-      flexDirection: "row"
-    }
-  },
-  leftColumn: {
     display: "flex",
-    "@media (min-width: 600px)": {
-      display: "block",
-      flex: 1
-    }
   },
-  rightColumn: {
-    "@media (min-width: 600px)": {
-      flex: 4
-    }
-  }
+  topRow: {
+    display: "flex",
+    flexDirection: "column",
+  },
+  bottomRow: {
+    display: "flex",
+    flexDirection: "row",
+  },
 };
 
 export default styles;

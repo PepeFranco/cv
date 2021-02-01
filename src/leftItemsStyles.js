@@ -5,15 +5,21 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     flex: 1,
-    alignItems: "space-evenly",
-    "@media (min-width: 600px)": {
-      alignItems: "flex-end"
-    },
-    paddingTop: "1vh"
+    paddingTop: "1vh",
+    marginRight: "2vw",
   },
   title: {
-    fontSize: constants.text.sectionHeader
-  }
+    fontSize: constants.text.sectionHeader,
+    fontWeight: "bold",
+  },
+  columns: {
+    display: "flex",
+    flexDirection: "row",
+    flex: 1,
+  },
+  column: {
+    marginRight: "2vw",
+  },
 };
 
 export default styles;

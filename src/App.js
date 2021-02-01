@@ -20,7 +20,7 @@ class App extends React.Component {
     this.state = { language: "en", printing: false };
   }
 
-  chooseLanguage = option => {
+  chooseLanguage = (option) => {
     if (option === "BR") this.setState({ language: "pt" });
     if (option === "MX") this.setState({ language: "es" });
     if (option === "AU") this.setState({ language: "en" });
@@ -28,35 +28,37 @@ class App extends React.Component {
 
   getCVInLanguage = () => {
     const { language } = this.state;
-    if(language === 'pt') return pt;
-    if(language === 'es') return es;
-    if(language === 'en') return en;
-  }
+    if (language === "pt") return pt;
+    if (language === "es") return es;
+    if (language === "en") return en;
+  };
 
   render() {
     const { classes } = this.props;
     const cv = this.getCVInLanguage();
     return (
-      <div className={classes.root}>
+      <div>
         <Header cv={cv} />
-        <div className={classes.flag}>
-          <ReactFlagsSelect
-            defaultCountry="AU"
-            countries={["AU", "MX", "BR"]}
-            customLabels={{ AU: "English", MX: "Español", BR: "Português" }}
-            onSelect={this.chooseLanguage}
-          />
-        </div>
-        <div className={classes.content}>
-          <div className={classes.leftColumn}>
-            <About cv={cv} />
-            <Languages cv={cv} />
-            <Programming cv={cv} />
-          </div>
-          <div className={classes.rightColumn}>
-            <Experience cv={cv} />
-            <Education cv={cv} />
-            <Achievements cv={cv} />
+        <div className={classes.root}>
+          <div className={classes.content}>
+            <div className={classes.flag}>
+              <ReactFlagsSelect
+                defaultCountry="AU"
+                countries={["AU", "MX", "BR"]}
+                customLabels={{ AU: "English", MX: "Español", BR: "Português" }}
+                onSelect={this.chooseLanguage}
+              />
+            </div>
+            <div className={classes.topRow}>
+              <Experience cv={cv} />
+              <Education cv={cv} />
+              <Achievements cv={cv} />
+            </div>
+            <div className={classes.bottomRow}>
+              <About cv={cv} />
+              <Languages cv={cv} />
+              <Programming cv={cv} />
+            </div>
           </div>
         </div>
       </div>
