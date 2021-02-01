@@ -23,14 +23,13 @@
   "programming": {
     "title": "tools",
     "items": [
-      "Javascript",
+      "Node",
       "React",
+      "GraphQL",
       "AWS EC2",
       "Lambda",
       "Cloudfront",
       "C#",
-      "ASP.NET MVC",
-      "Oracle DB",
       "PL/SQL"
     ]
   },
@@ -41,7 +40,7 @@
         "date": "2019",
         "title": "SEEK. Melbourne, Australia.",
         "subtitle": " Senior Developer",
-        "content": "Development of <a href='http://seek.com.au/'>SEEK</a> apply page on ReactJS. Building new experimental features with best development practices and maintanibility-first mindset. Updating and mantaining C# legacy system."
+        "content": "Development of <a href='http://seek.com.au/'>SEEK</a> apply page on ReactJS. Notable accomplishments include: Helped the team architect a modular front end solution which enabled the introduction of indirect applications. Championed the resume parsing feature by stakeholders to deliver this feature on time, while making thoughtful tradeoffs of delivery speed and tech debt. Deprecated legacy GO experience apply API that handles web applications with new Typescript one, rollint it out to thousands of candidates with no downtime."
       },
       {
         "date": "2016 - 2019",
@@ -53,7 +52,7 @@
         "date": "2018",
         "title": "SEEK. Melbourne, Australia.",
         "subtitle": " Senior Developer",
-        "content": "Development of <a href='http://hk.jobsdb.com/'>JobsDB Hong Kong</a> job search site on ReactJS. Tech lead for job detail page. Site built on escalable architecture on AWS EC2 & Lamba for multiple countries & brands on southeast Asia."
+        "content": "Development of <a href='http://hk.jobsdb.com/'>JobsDB Hong Kong</a> job search site on ReactJS. Tech lead for job detail page. Implemented split view which allowed candidates to see detailed job views while browsing for jobs."
       },
       {
         "date": "2016",

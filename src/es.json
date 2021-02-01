@@ -23,14 +23,13 @@
   "programming": {
     "title": "tecnologías",
     "items": [
-      "Javascript",
+      "Node",
       "React",
+      "GraphQL",
       "AWS EC2",
       "Lambda",
       "Cloudfront",
       "C#",
-      "ASP.NET MVC",
-      "Oracle BD",
       "PL/SQL"
     ]
   },
@@ -41,7 +40,7 @@
         "date": "2019",
         "title": "SEEK. Melbourne, Australia.",
         "subtitle": " Desarrollador Senior",
-        "content": "Desarrollo de la página para aplicar a trabajos en <a href='http://seek.com.au/'>SEEK</a>. Construyendo nuevas funcionalidades experimentales con mejores practicas y priorizando la mantenibilidad del código. Actualizando y manteniendo un sistema legacy en C#."
+        "content": "Desarrollo de la página para aplicar a trabajos en <a href='http://seek.com.au/'>SEEK</a>. Logros incluyen: Ayudar al equipo a diseñar una solución front end modular que permitió introducir aplicaciones indirectas. Implementación de análisis de CVs, manejando stakeholders de diferentes disciplinas para entregar la funcionalidad a tiempo con consideraciones de velocidad contra deuda técnica. Depreciación de API legacy en GO por nueva en Typescript, la cual ocurrió sin ningún tiempo de baja."
       },
       {
         "date": "2016 - 2019",
